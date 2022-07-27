@@ -6,22 +6,22 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import {MatIconModule} from '@angular/material/icon';
-import { MenuComponent } from './components/menu/menu.component'
+import { MatIconModule } from '@angular/material/icon';
+import { MenuComponent } from './components/menu/menu.component';
+import { MatButtonModule } from '@angular/material/button';
+import { BodyFeatureComponent } from './components/body-feature/body-feature.component';
 @NgModule({
-  declarations: [
-    AppComponent,
-    MenuComponent
-  ],
+  declarations: [AppComponent, MenuComponent, BodyFeatureComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbModule,
     FontAwesomeModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
